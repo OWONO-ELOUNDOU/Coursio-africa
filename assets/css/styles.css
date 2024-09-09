@@ -15,6 +15,11 @@ svg {
     width: 20px;
 }
 
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
 /* Header start start */
 header {
     display: flex;
@@ -42,7 +47,7 @@ header .logo svg {
 }
 /* Header start end */
 
-/* Hero Section CSS start */
+/* Hero Section home CSS start */
 .hero {
     width: 100%;
     height: 100%;
@@ -99,11 +104,14 @@ header .logo svg {
 .hero .info .text ul li svg {
     width: 15px;
 }
-.hero .info .text ul li,
-.hero .info .text span {
+.hero .info .text ul li {
     list-style: none;
     font-size: 13px;
     font-weight: 600;
+}
+.hero .info .text span {
+    font-size: 15px;
+    font-weight: bold;
 }
 .hero .info .text ul li:not(:last-child) {
     margin-bottom: 16px;
@@ -150,7 +158,75 @@ header .logo svg {
     font-size: 13px;
     font-weight: 600;
 }
-/* Hero Section CSS end */
+/* Hero Section home CSS end */
+
+
+/* Contact Page CSS start */
+.hero .description span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+form {
+    width: 600px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #efefef;
+}
+form .input-box {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+.input-field {
+    width: 250px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 5px;
+}
+label {
+    font-size: 13px;
+}
+.input-field input {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.input-box .message {
+    width: 100%;
+}
+textarea {
+    width: 100%;
+    resize: none;
+    margin-top: 10px;
+    padding: 10px;
+}
+form .buttons button {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    color: #ffffff;
+    background-color: #0463cb;
+    cursor: pointer;
+}
+
+.social-links {
+    width: 600px;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #efefef;
+}
+/* Contact Page CSS end */
 
 
 /* Responsive design css */
@@ -188,5 +264,17 @@ header .logo svg {
 
     .hero .info .text {
         text-align: center;
+    }
+
+    /* Contact page responsive css */
+    form {
+        width: 100%;
+    }
+    form .input-box {
+        align-items: center;
+        justify-content: center;
+    }
+    .input-field {
+        width: 100%;
     }
 }
